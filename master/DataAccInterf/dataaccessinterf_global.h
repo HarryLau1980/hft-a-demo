@@ -1,0 +1,12 @@
+#ifndef DATAACCESSINTERF_GLOBAL_H
+#define DATAACCESSINTERF_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(DATAACCESSINTERF_LIBRARY)
+#  define DAI_EXPORT Q_DECL_EXPORT
+#else
+#  define DAI_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // DATAACCESSINTERF_GLOBAL_H
